@@ -3,9 +3,9 @@ FROM ubuntu:latest
 
 RUN apt-get update
 RUN apt-get install -y wget vim
-RUN wget https://grafanarel.s3.amazonaws.com/builds/grafana_2.1.3_amd64.deb
+RUN wget https://grafanarel.s3.amazonaws.com/builds/grafana_2.6.0_amd64.deb
 RUN sudo apt-get install -y adduser libfontconfig
-RUN sudo dpkg -i grafana_2.1.3_amd64.deb
+RUN sudo dpkg -i grafana_2.6.0_amd64.deb
 RUN apt-get install -y apt-transport-https
 
 RUN echo "deb https://packagecloud.io/grafana/stable/debian/ wheezy main" >> /etc/apt/sources.list
